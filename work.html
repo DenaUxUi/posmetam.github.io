@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NAN</title>
+    <link href="bootstrap-5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="cmn-toggle-switch/cmn-toggle-switch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Logo</a>
+        <button class="navbar-toggler cmn-toggle-switch cmn-toggle-switch__htx" type="button" data-bs-toggle="collapse" data-bs-target="#nc" aria-controls="nc" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nc">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./aboutProject.html">О проекте</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./work.html">Как это работает</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./getSmeta.html">Получить смету</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./reviews.html">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-0" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18'%3E%3Cpath d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3' fill='%23CDD0D5'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#"><img src="im/home.svg" alt="" class="me-2"> Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Как это работает</li>
+        </ol>
+      </nav>
+      <h1>Какой проект распознается нашим ИИ? Три основных момента.</h1>
+
+      <div class="tabs">
+        <ul class="nav nav-tabs nav-pills nav-fill" id="myTab">
+          <li class="nav-item">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" aria-controls="home-tab-pane" aria-selected="true">Первый</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" aria-controls="profile-tab-pane" aria-selected="false">Второй</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" aria-controls="contact-tab-pane" aria-selected="false">Третий</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" aria-labelledby="home-tab" tabindex="0">
+            <p class="h1">Файл должен быть в .pdf</p>
+            <ol>
+              <li>Предпочтительная стадия РД (рабочая документация).</li>
+              <li>В файле должны быть рабочие чертежи и спецификация материалов.</li>
+              <li>
+                <p class="mb_30">Текст должен быть распознаваем, а чертежи в векторной графике (не картинка).</p>
+                <p class="fw-bolder mb_30">Убедиться, что текст распознаваем, можно, попробовав выделить часть текста курсором и скопировать в буфер обмена.</p>
+                <img src="im/im1.jpg" class="img-fluid d-block mx-auto" alt="">
+              </li>
+              <li>
+                <p class="mb_30">ИИ по прежнему плохо распознаёт разделы АР и КЖ, содержащие «пироги», таблицы поверхностей и спецификации элементов:</p>
+              </li>
+            </ol>
+            <div class="table1">
+              <p class="">Спецификация элементов</p>
+              <table class="table table-bordered align-middle mb-md-5 mb-4">
+                <thead>
+                  <tr class="text-center align-middle">
+                    <th>Наименование</th>
+                    <th>Кол.</th>
+                    <th>Масса, ед., кг</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center"><u>Элементы балок<u></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <div class="me-3">С24П ГОСТ 8240-97 <hr class="m-0">C245 ГОСТ27772-2015</div>
+                        <div>L<sub>общ.</sub>=18,9 м.п.</div>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td class="text-center">453,6</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <div class="me-3">L100x100x7 ГОСТ 8509-93<hr class="m-0">C245 ГОСТ27772-2015</div>
+                        <div>L<sub>общ.</sub>=8,5 м.п.</div>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td class="text-center">91,7</td>
+                  </tr>
+                  <tr>
+                    <td class="text-center"><u>Армирование<u></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>&Oslash;12 А-III (А400) ГОСТ 5781-82 L=850 мм</td>
+                    <td class="text-center">12</td>
+                    <td class="text-center">0,75</td>
+                  </tr>
+                  <tr>
+                    <td>&Oslash;12 А-III (А400) ГОСТ 5781-82 L=1260 мм</td>
+                    <td class="text-center">26</td>
+                    <td class="text-center">1,12</td>
+                  </tr>
+                  <tr>
+                    <td>&Oslash;12 А-III (А400) ГОСТ 5781-82 L=1600 мм</td>
+                    <td class="text-center">7</td>
+                    <td class="text-center">1,42</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="col-lg">
+                <div class="table1 w-100 mb-lg-0">
+                <p class="head_blue">Таблица поверхностей</p>
+                <p class="">Спецификация элементов</p>
+                <table class="table table-bordered align-middle mb-lg-4 mb-md-5 mb-4">
+                  <thead>
+                    <tr class="text-center align-middle">
+                      <th>Наименование</th>
+                      <th>Кол.</th>
+                      <th>Масса,<br> ед., кг</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center"><u>Элементы балок<u></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="me-3">С24П ГОСТ 8240-97 <hr class="m-0">C245 ГОСТ27772-2015</div>
+                          <div>L<sub>общ.</sub>=18,9 м.п.</div>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td class="text-center">453,6</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="me-3">L100x100x7 ГОСТ 8509-93<hr class="m-0">C245 ГОСТ27772-2015</div>
+                          <div>L<sub>общ.</sub>=8,5 м.п.</div>
+                        </div>
+                      </td>
+                      <td></td>
+                      <td class="text-center">91,7</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center"><u>Армирование<u></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>&Oslash;12 А-III (А400) ГОСТ 5781-82 L=850 мм</td>
+                      <td class="text-center">12</td>
+                      <td class="text-center">0,75</td>
+                    </tr>
+                    <tr>
+                      <td>&Oslash;12 А-III (А400) ГОСТ 5781-82 L=1260 мм</td>
+                      <td class="text-center">26</td>
+                      <td class="text-center">1,12</td>
+                    </tr>
+                    <tr>
+                      <td>&Oslash;12 А-III (А400) ГОСТ 5781-82 L=1600 мм</td>
+                      <td class="text-center">7</td>
+                      <td class="text-center">1,42</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+              <div class="col-lg">
+                <div class="table1 w-100">
+                  <p class="head_blue">Пироги поверхностей</p>
+                  <p class="">Экспликация полов (начало)</p>
+                  <div class="table-responsive">
+                    <table class="table table-bordered align-middle table_sm">
+                      <thead>
+                        <tr class="text-center align-middle">
+                          <th>Наименование помещения</th>
+                          <th>Тип пола</th>
+                          <th>Схема пола или тип пола по серии</th>
+                          <th>Данные элементов пола (наименование, толщина, основание и др.)</th>
+                          <th>Площ. м <sup>2</sup></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td colspan="5" class="text-center">Помещения - 1 этажа</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">1, 2, 3, 4</td>
+                          <td class="text-center">1</td>
+                          <td><img src="im/im2.jpg" class="img-fluid" alt=""></td>
+                          <td>
+                            <div class="d-flex justify-content-between mb-2 lh-1">
+                              <div>-Противоскользящая керамогранитная плитка р-р 600х600</div>
+                              <div class="ms-3">&delta;=8мм.</div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 lh-1">
+                              <div>-Водостойкий клей для керам.</div>
+                              <div class="ms-3">&delta;=5мм.</div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 lh-1">
+                              <div>-Стяжка цем.песчан.р-ом М200</div>
+                              <div class="ms-3">&delta;=40мм.</div>
+                            </div>
+                            -Сборная ж.б. плита
+                          </td>
+                          <td class="text-center">151,94</td>
+                        </tr>
+                        <tr>
+                          <td class="text-center">6, 7, 14</td>
+                          <td class="text-center">2</td>
+                          <td><img src="im/im3.jpg" class="img-fluid" alt=""></td>
+                          <td>
+                            <div class="d-flex justify-content-between mb-2 lh-1">
+                              <div>-Полиуретановое покрытие Цемезит УР</div>
+                              <div class="ms-3">&delta;=5мм.</div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 lh-1">
+                              <div>-Стяжка цем.песчан.р-ом М200</div>
+                              <div class="ms-3">&delta;=40мм.</div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2 lh-1">
+                              <div>-Бетонная подготовка В7,5 по металлической сетке &Oslash;6AI ГОСТ 5781-82*ш.100 в обоих напр.</div>
+                              <div class="ms-3">&delta;=80мм.</div>
+                            </div>
+                            <div class="mb-2 lh-1">
+                              -Гидроизоляция Техноэласт ЭПП, 2 слоя
+                            </div>
+                            <div class="mb-2 lh-1">
+                              -Праймер битумный ТЕХНОНИКОЛЬ №01
+                            </div>
+                            <div class="d-flex justify-content-between lh-1">
+                              <div>-Уплотненный грунт с втрамбованным щебнем</div>
+                              <div class="ms-3">&delta;=100мм.</div>
+                            </div>
+                          </td>
+                          <td class="text-center">452,8</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            Мы примерно понимаем как это исправить, работаем в этом направлении.
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" aria-labelledby="profile-tab" tabindex="0">
+            <p>Даже если все условия соблюдены, может случиться так, что калькуляцию ИИ выдаст пустую или без цен.</p>
+            <p class="fw-bolder">Убедиться, что текст распознаваем, можно, попробовав выделить часть текста курсором и скопировать в буфер обмена.</p>
+            <div class="table1">
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle mb-4">
+                  <thead>
+                    <tr class="text-center align-middle">
+                      <th>Материал/оборудование</th>
+                      <th>Изготовитель</th>
+                      <th>Ед. изм</th>
+                      <th>Кол-во</th>
+                      <th>Цена за ед.</th>
+                      <th>Стоимость</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Крыльцо</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>
+                    <tr>
+                      <td>Прихожая</td>
+                      <td>А</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                  
+                    <tr>
+                      <td>Техпомещение</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                
+                    <tr>
+                      <td>Санузел</td>
+                      <td>Б</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                
+                    <tr>
+                      <td>Кухня-столовая</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                    
+                    <tr>
+                      <td>Гостиная</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>            
+                    <tr>
+                      <td>Кабинет</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                
+                    <tr>
+                      <td>Гостевая спальня</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                
+                    <tr>
+                      <td>Санузел</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>                
+                    <tr>
+                      <td>Терраса</td>
+                      <td>отсутствует</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>
+                    <tr>
+                      <td>Санузел</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">3,5</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>  
+                    <tr>
+                      <td>Кухня-столовая</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">19,7</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>  
+                    <tr>
+                      <td>Гостиная</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">64,1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>  
+                    <tr>
+                      <td>Кабинет</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">17,4</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>  
+                    <tr>
+                      <td>Гостевая спальня</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">16,2</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr>  
+                    <tr>
+                      <td>Санузел</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">4,2</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr> 
+                    <tr>
+                      <td>Терраса</td>
+                      <td>NaN</td>
+                      <td>шт.</td>
+                      <td class="ic">55,6</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr> 
+                    <tr>
+                      <td>Общая площадь 1-го этажа</td>
+                      <td>NaN</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td></td>
+                      <td class="text-end">0</td>
+                    </tr> 
+                    <tr>
+                      <td>Общая площадь дома без этажа</td>
+                      <td>NaN</td>
+                      <td>кв.м</td>
+                      <td class="ic">1</td>
+                      <td class="text-end">7750000</td>
+                      <td class="text-end">7750000</td>
+                    </tr> 
+                    <tr>
+                      <td class="fw-bolder">Итого</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td class="text-end fw-bolder">7750000</td>
+                    </tr> 
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p>Такое происходит в 3-6% случаев и каждый раз разные. Он может неправильно «схватить таблицу» или  съехать на каких-то ячейках. Об этом можно написать нам - мы попробуем поправить, если баг незначительный.</p>
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" aria-labelledby="contact-tab" tabindex="0">
+            <p>Не стоит полагаться на результаты калькуляции без проверки. Это пока тестовый сервис и только лишь помогает пользователям сократить работу по созданию калькуляции. </p>
+            <p>О всех пожеланиях, вопросах и требованиях можно нам сообщать на: 
+              <a href="mailto:support@posmetam.ru" class="blue underline fw-bolder">support@posmetam.ru</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-xl-4 col-sm-6">
+            <p class="mb-sm-0 mb-4">2024© PoSmetam.ru – сервис для расчёта калькуляций по проектам с помощью нейросетей.</p>
+          </div>
+          <div class="col-xl-4 col-sm-5 col-10">
+            <div class="d-flex justify-content-between mb-md-4 mb-2">
+              <a href="" class="me-2"><img src="im/i1.svg" alt="" class="img-fluid"></a>
+              <a href="" class="mx-2"><img src="im/i2.svg" alt="" class="img-fluid"></a>
+              <a href="" class="mx-2"><img src="im/i3.svg" alt="" class="img-fluid"></a>
+              <a href="" class="ms-2"><img src="im/i4.svg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="" class="me-2"><img src="im/i5.svg" alt="" class="img-fluid"></a>
+              <a href="" class="mx-2"><img src="im/i6.svg" alt="" class="img-fluid"></a>
+              <a href="" class="mx-2"><img src="im/i7.svg" alt="" class="img-fluid"></a>
+              <a href="" class="ms-2"><img src="im/i8.svg" alt="" class="img-fluid"></a>
+            </div>
+          </div>
+        </div>
+        <ul class="nav footer_menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">История сайта</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Реквизиты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-0" href="#">Договор оферта</a>
+          </li>
+        </ul>
+
+      </div>
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="cmn-toggle-switch/cmn-toggle-switch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

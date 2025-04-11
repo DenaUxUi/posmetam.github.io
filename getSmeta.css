@@ -1,0 +1,25 @@
+.block{
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.example{
+    display: flex;
+    gap: 64px;
+}
+
+.imageExample{
+    width: 100%;
+    object-fit: contain
+}
+
+@media screen and (max-width: 992px){
+    .example{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 64px;
+    }
+}
